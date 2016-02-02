@@ -1,5 +1,7 @@
 brackens-gregs-wades
 ====================
+![https://github.com/brackendawson/brackens-gregs-wades/raw/master/brackens-gregs-wade.png](https://github.com/brackendawson/brackens-gregs-wades/raw/master/brackens-gregs-wade.png "I know right, *another* one?!")
+
 This is a modification of the Gregs-Wades-Hinged-Accessible Extruder source.
 
 It includes the removable captive hinged idler idea from the Eckertech i2, The idler is my re-design to make it strong enough, I have re-designed starting from the gregs source.
