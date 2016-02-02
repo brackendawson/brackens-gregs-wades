@@ -87,7 +87,7 @@ module wade (hotend_mount=0)
 		{
             // The idler
             %translate(motor_mount_translation) translate([-gear_separation-idler_block_spaceing,-idler_axle_offset,wade_block_depth]) rotate([180,0,90]) bracken_idler();
-            translate([40,-20,wade_block_depth]) rotate([180,0,0]) bracken_idler(scaffold=true);
+            translate([40,-20,0]) rotate([0,0,0]) bracken_idler(scaffold=true);
            
            // Bearing and hobbed bolt for tuning idler_bolt_offset_depth
            %translate(motor_mount_translation) translate([-gear_separation-idler_block_spaceing+idler_axle_offset_depth,0,wade_block_depth/2-3.5]) cylinder(d=22,h=7);
