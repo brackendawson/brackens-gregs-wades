@@ -61,7 +61,7 @@ block_top_right=[wade_block_width,wade_block_height];
 layer_thickness=0.4;
 filament_feed_hole_d=4;
 filament_diameter=3;
-filament_feed_hole_offset=filament_diameter+0.5;
+filament_feed_hole_offset=filament_diameter+1;
 
 
 gear_separation=7.4444+32.0111+0.25;
@@ -87,7 +87,7 @@ module wade (hotend_mount=0)
 		{
             // The idler
             %translate(motor_mount_translation) translate([-gear_separation-idler_block_spaceing,-idler_axle_offset,wade_block_depth]) rotate([180,0,90]) bracken_idler();
-            translate([40,-20,0]) rotate([0,0,0]) bracken_idler(scaffold=true);
+            translate([40,-20,0]) rotate([0,0,180]) bracken_idler(scaffold=true);
            
            // Bearing and hobbed bolt for tuning idler_bolt_offset_depth
            %translate(motor_mount_translation) translate([-gear_separation-idler_block_spaceing+idler_axle_offset_depth,0,wade_block_depth/2-3.5]) cylinder(d=22,h=7);
@@ -285,7 +285,7 @@ module block_holes()
 	}
 
 	// Idler mounting hole
-    translate([-1,idler_bolt_height+motor_mount_translation[1]-idler_axle_offset+0.5,wade_block_depth-idler_bolt_depth]) rotate([0,90,0]) cylinder(d=m4_diameter, h=wade_block_width+2);
+    translate([-1,idler_bolt_height+motor_mount_translation[1]-idler_axle_offset+1,wade_block_depth-idler_bolt_depth]) rotate([0,90,0]) cylinder(d=m4_diameter, h=wade_block_width+2);
     translate([wade_block_width-3,idler_bolt_height+motor_mount_translation[1]-idler_axle_offset+0.5,wade_block_depth-idler_bolt_depth]) rotate([0,90,0]) cylinder(d=m4_nut_diameter, h=wade_block_width, $fn=6);
 }
 
