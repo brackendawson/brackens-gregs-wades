@@ -1,6 +1,6 @@
 brackens-gregs-wades
 ====================
-![https://github.com/brackendawson/brackens-gregs-wades/raw/master/brackens-gregs-wade.png](https://github.com/brackendawson/brackens-gregs-wades/raw/master/brackens-gregs-wade.png "I know right, *another* one?!")
+![I know right, *another* one?!](https://github.com/brackendawson/brackens-gregs-wades/blob/main/brackens-gregs-wade.png?raw=true)
 
 This is a modification of the Gregs-Wades-Hinged-Accessible Extruder source.
 
