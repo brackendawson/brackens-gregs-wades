@@ -1,6 +1,6 @@
 // Greg's Wade Gears.
 // It is licensed under the Creative Commons - GNU GPL license. 
-// © 2010 by GregFrost
+// ï¿½ 2010 by GregFrost
 // Parametric extruder gears based on prusa git repo.
 // http://www.thingiverse.com/thing:6713
 
@@ -60,7 +60,7 @@ module WadesS(){
 			hub_diameter = 18,
 			bore_diameter = 5.25,
 			circles=0);
-		translate([0,-5,17])cube([6.2,3,9],center = true);
+		translate([0,-2.5,17])cube([6.2,3,9],center = true);
 		translate([0,0,14])rotate([0,90,-90])rotate(30)cylinder(r=1.7,h=20);
 		translate([0,-5,14])rotate([0,90,-90])cylinder(r=6.2/2/cos(30),h=3,$fn=6,center=true);
 	}
